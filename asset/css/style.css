@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+}
+/*HEAD-S*/
+
+/*HEAD-E*/
+/*BODY-S*/
+.heading1{
+    text-align: center;
+    font-size: 30px;
+    color: #ccccac;
+    font-family: 'Krona One', sans-serif;
+}
+.heading2{
+    color: #ccccac;
+}
+.text-align-right{
+    text-align: right;
+}
+.text-align-left{
+    text-align: left;
+}
+.heading3{
+    text-align: center;
+    font-size: 15px;
+    color: #ccccac;
+    font-family: 'Nunito', sans-serif;
+}
+.margin-top{
+    margin-top: 15%;
+}
+/*BODY-E*/
+/*FOOTER-S*/
+
+/*FOOTER-E*/
+
+@media only screen and (min-width: 320px){
+
+
+}
+
+@media only screen and (min-width: 360px){
+
+
+}
+
+@media only screen and (min-width: 375px){
+
+
+}
+
+@media only screen and (min-width: 411px){
+
+
+}
+
+@media only screen and (min-width: 414px){
+
+
+}
+
+@media only screen and (min-width: 540px){
+
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+}
+
+@media only screen and (min-width: 1024px){
+
+
+}
+
+@media only screen and (min-width: 1025px){
+    
+
+}
