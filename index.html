@@ -32,33 +32,57 @@
     <!--body-start-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <h1 id="location" class="heading1 margin-top"></h1>
-                    <div class="row">
-                        <div class="col-2 offset-3 ">
-                            <h1 id="temperature" class="heading2 text-align-right"></h1>
+                <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                    <div class="row margin-top">
+                        <div class="col-2">
+                            <i class="fas fa-map-marker-alt location-icon "></i>
                         </div>
-                        <div class="col-1">
-                            <img id="icon1" src="" alt="" class="weather-icon">
+                        <div class="col-8">
+                            <input id="inputCity" class="city-inputbox" type="text" placeholder="City Name">
                         </div>
                         <div class="col-2">
-                            <h1 id="weatherType" class="heading2 text-align-left"></h1>
+                            <i id="searchBtn" class="fas fa-search-location location-icon cursor-pointer" onclick="handleSearch()"></i>
                         </div>
                     </div>
+
+                    <h1 id="location" class="heading1"></h1>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <h1 id="temperature" class="heading2 text-align-right"></h1>
+                        </div>
+                        <div class="col-4">
+                            <h1 id="weatherType" class="heading2 text-align-left"></h1>
+                        </div>
+                        <div class="col-4">
+                            <img id="icon1" src="" alt="" class="weather-icon">
+                        </div>
+                    </div>
+
                     <h1 id="feelsLike" class="heading3"></h1>
                     <h1 id="minTemp" class="heading3"></h1>
                     <h1 id="maxTemp" class="heading3"></h1>
                     <h1 id="humidity" class="heading3"></h1>
                     <h1 id="cloudsType" class="heading3"></h1>
                     <h1 id="location" class="heading1">Wind</h1>
+
                     <div class="row">
-                        <div class="col-2 offset-4">
+                        <div class="col-4 offset-2">
                             <h1 id="windSpeed" class="heading3"></h1>
                         </div>
-                        <div class="col-2">
+                        <div class="col-4">
                             <h1 id="windDirection" class="heading3"></h1>
                         </div>
-                    </div>                   
+                    </div> 
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn temp-btn">Celcious</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn temp-btn">Fehrenheit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
