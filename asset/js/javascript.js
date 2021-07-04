@@ -40,7 +40,7 @@ function dataEntry(City){
             "windDirection" : "Direction " + data.wind.deg + "deg"
         }
 
-        dataInput(weatherDataF)
+        dataInput(weatherDataC)
 
     
 });
