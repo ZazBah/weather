@@ -33,23 +33,7 @@
 .margin-top{
     margin-top: 50px;
 }
-.city-inputbox{
-    width: 100%;
-    background-color: transparent;
-    border: 2px solid #ccccac;
-    color: #ccccac;
-    border-radius: 50px;
-    padding-left: 20px;
-    outline: none;
-}
-.location-icon{
-    font-size: 20px;
-    color: #ccccac;
-    margin-top: 5px;
-}
-.cursor-pointer{
-    cursor: pointer;
-}
+
 .temp-btn{
     width: 100%;
     background-color: transparent;
@@ -62,9 +46,57 @@
     color: #202020;
     background-color: #ccccac;
 }
+.search-bar-div{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.search-input{
+    width: 70%;
+    margin-right: 0px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 2px solid #ccccac;
+    color: #ccccac;
+    outline: 0px;
+    padding-left: 20px;
+}
+.search-btn{
+    width: 25%;
+    margin-left: 0px !important;
+    color: #ccccac;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    border: 2px solid #ccccac;
+    outline: 0px;
+    margin-top: -4px !important;
+    margin-left: -4px !important;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.search-btn:hover{
+    background-color: #ccccac;
+    color: black;
+}
 /*BODY-E*/
 /*FOOTER-S*/
-
+.foter-div{
+    margin-top: 30%;
+    background-color: black;
+}
+.heading-foter{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
 /*FOOTER-E*/
 
 @media only screen and (min-width: 320px){

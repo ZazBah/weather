@@ -34,7 +34,7 @@ function handleFerTmep(){
 function dataEntry(City,Scale,countOn){
     let count = countOn;
     
-    $.get("https://api.openweathermap.org/data/2.5/weather?q="+ City +"&units="+ Scale +"&appid=9334788e9645c1afc1ad3644bb22e522", function dataSubmit(data,countOn){
+    $.get("https://api.openweathermap.org/data/2.5/weather?q="+ City +"&units="+ Scale +"&appid=9334788e9645c1afc1ad3644bb22e522", function dataSubmit(data){
         var weatherData = {
             "location" : data.name + "," + data.sys.country,
             "city" : data.name,

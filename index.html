@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAZBAH</title>
+    <title>Weather</title>
 
 
     <!--fav_icon-->
@@ -37,14 +37,11 @@
             <div class="row">
                 <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
                     <div class="row margin-top">
-                        <div class="col-2">
-                            <i class="fas fa-map-marker-alt location-icon "></i>
-                        </div>
-                        <div class="col-8">
-                            <input id="inputCity" class="city-inputbox" type="text" placeholder="City Name">
-                        </div>
-                        <div class="col-2">
-                            <i id="searchBtn" class="fas fa-search-location location-icon cursor-pointer" onclick="handleSearch()"></i>
+                        <div class="col-12 offset-0">
+                            <div class="search-bar-div">
+                                <input id="inputCity" class="search-input" type="text">
+                                <div id="searchBtn" class="btn search-btn" onclick="handleSearch()">Search</div>
+                            </div>
                         </div>
                     </div>
 
@@ -92,7 +89,13 @@
     <!--body-end-->
     
     <!--footer-start-->
-        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 foter-div">
+                    <h1 class="heading-foter">Created by ZazBah</h1>
+                </div>
+            </div>
+        </div>
     <!--footer-end-->
 
 
