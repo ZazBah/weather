@@ -1,0 +1,29 @@
+*{
+    cursor: default;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    position: static;
+    background: url(../image/clouds.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+input,button:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}

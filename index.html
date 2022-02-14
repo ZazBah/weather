@@ -7,9 +7,6 @@
     <title>Weather</title>
 
 
-    <!--fav_icon-->
-    <link rel="shortcut icon" type="image/png" href="asset/image/favicon.png">
-    
     <!--Bootstrap_CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -17,70 +14,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!--Remixon-Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--My_CSS-->
+    <link rel="stylesheet" href="asset/scss/main.css">
     <link rel="stylesheet" href="asset/css/style.css">
 
+
 </head>
-<body>
+<body >
     <!--head-start-->
-        
+
     <!--head-end-->
 
     <!--body-start-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-                    <div class="row margin-top">
-                        <div class="col-12 offset-0">
-                            <div class="search-bar-div">
-                                <input id="inputCity" class="search-input" type="text">
-                                <div id="searchBtn" class="btn search-btn" onclick="handleSearch()">Search</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12 offset-0 col-lg-8 offset-lg-2">
+                    <div class="weather-jar">
+                        <img id="imageType" class="img-box">
+                        <div class="row" style="height: 100%;">
+                            <div class="col-12 col-lg-7">
+                                <h1 class="logo">Weather</h1>
 
-                    <h1 class="heading1"><span id="city"></span>,<span id="country"></span></h1>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <h1 id="temperature" class="heading2 text-align-right"></h1>
-                        </div>
-                        <div class="col-4">
-                            <h1 id="weatherType" class="heading2 text-align-left"></h1>
-                        </div>
-                        <div class="col-4">
-                            <img id="icon1" src="" alt="" class="weather-icon">
-                        </div>
-                    </div>
-
-                    <h1 id="feelsLike" class="heading3"></h1>
-                    <h1 id="minTemp" class="heading3"></h1>
-                    <h1 id="maxTemp" class="heading3"></h1>
-                    <h1 id="humidity" class="heading3"></h1>
-                    <h1 id="cloudsType" class="heading3"></h1>
-                    <h1 id="location" class="heading1">Wind</h1>
-
-                    <div class="row">
-                        <div class="col-4 offset-2">
-                            <h1 id="windSpeed" class="heading3"></h1>
-                        </div>
-                        <div class="col-4">
-                            <h1 id="windDirection" class="heading3"></h1>
-                        </div>
-                    </div> 
+                                <div class="details">
+                                    <div class="row">
+                                        <div class="col-3 col-md-3 col-lg-4">
+                                            <h1 id="temp" class="temperature"></h1>
+                                        </div>
+                                        <div class="col-7 col-md-3 col-lg-6">
+                                            <h1 id="city" class="place"></h1>
+                                            <p class="pera"><span id="hours"></span>.<span id="minute"></span>-<span id="day"></span>-<span id="date"></span><span id="month"></span>- <span id="year"></span></p>
+                                        </div>
+                                        <div class="col-2 col-md-5 col-lg-2">
+                                            <p class="weather-type-logo"> <i id="iconType" class=""></i> </p>
+                                            <p id="weatherType" class="pera"></p>
+                                        </div>
+                                    </div>
+                                </div>
                     
-                    <div class="row">
-                        <div class="col-6">
-                            <button class="btn temp-btn" onclick="handleCelTmep()">Celcious</button>
-                        </div>
-                        <div class="col-6">
-                            <button class="btn temp-btn" onclick="handleFerTmep()">Fehrenheit</button>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="country">
+                                    <button class="search-btn" onclick="handleSearch()"> <i class="ri-search-line"></i> </button>
+                                    <input id="inputBox" type="text" class="input-place">
+
+                                    <p id="location1" class="pera" style="margin-top: 20px; cursor: pointer;" onclick="handlePlace1()"></p>
+                                    <p id="location2" class="pera" style="cursor: pointer;" onclick="handlePlace2()"></p>
+                                    <p id="location3" class="pera" style="cursor: pointer;" onclick="handlePlace3()"></p>
+                                    <p id="location4" class="pera" style="cursor: pointer;" onclick="handlePlace4()"></p>
+
+                                    <hr class="bar"></hr>
+
+                                    <h1 class="heading1" style="margin-top: 20px; margin-bottom: 20px;">Weather Details</h1>
+
+                                    <p class="pera">Clouds <span id="clouds" class="gap"></span></p>
+                                    <p class="pera">Humidity <span id="humidity" class="gap"></span></p>
+                                    <p class="pera">Wind <span id="windSpeed" class="gap"></span></p>
+                                    <p class="pera">Max Temperature <span id="maxTemp" class="gap"></span></p>
+                                    <p class="pera">Min Temperature <span id="minTemp" class="gap"></span></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,13 +84,7 @@
     <!--body-end-->
     
     <!--footer-start-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 foter-div">
-                    <h1 class="heading-foter">Created by ZazBah</h1>
-                </div>
-            </div>
-        </div>
+        
     <!--footer-end-->
 
 
@@ -104,13 +93,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!--Fontawsome-->
-    <script src="https://kit.fontawesome.com/e6c688e1c2.js" crossorigin="anonymous"></script>
-
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <!--My_JavaScript-->
-    <script src="asset/js/javascript.js"></script>
+    <script src="asset/js/style.js"></script>
+    <script src="asset/js/temp.js"></script>
+    <script src="asset/js/locations.js"></script>
+    <script src="asset/js/image.js"></script>
+    <script src="asset/js/icon.js"></script>
+    <script src="asset/js/defaultData.js"></script>
+    <script src="asset/js/date.js"></script>
+    <script src="asset/js/search.js"></script>
+    
 </body>
 </html>

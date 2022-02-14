@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Orbitron&family=Prata&family=Righteous&display=swap');
+:root{
+
+    --color-white: #FBFCFC;
+    --color-orange: #f3c209;
+    --color-light: #D0D3D4;
+
+    --bg-color-dark: #090909;
+    --bg-color-light: #131313;
+
+    --font-temp: 'Righteous', cursive;
+    --font-heading: 'Courgette', cursive;
+    --font-pera: 'Prata', serif;
+
+    --font-bold: 400;
+    --font-semibold: 600;
+    --font-bolder: 800;
+
+    --font-size-small: 8px;
+    --font-size-medium: 10px;
+    --font-size-learge: 15px;
+    --font-size-learger: 20px;
+
+    @media screen and (min-width: 768px){
+        --font-size-small: 10px;
+        --font-size-medium: 15px;
+        --font-size-learge: 20px;
+        --font-size-learger: 60px;
+    }
+    @media screen and (min-width: 1025px){
+        
+
+        --font-size-small: 15px;
+        --font-size-medium: 20px;
+        --font-size-learge: 30px;
+        --font-size-learger: 60px;
+    }
+}
+
+@mixin heading1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-learge);
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+@mixin heading2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-medium);
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+@mixin pera {
+    font-family: var(--font-pera);
+    font-size: var(--font-size-medium);
+    color: var(--color-light);
+}
+.opacity0{
+    opacity: 0;
+}

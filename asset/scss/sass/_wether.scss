@@ -1,0 +1,115 @@
+.weather-jar{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+    margin-top: 10%;
+    overflow: hidden;
+
+    .img-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 80%;
+    }
+
+    .logo{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-family: var(--font-heading);
+        color: var(--color-white);
+        font-size: var(--font-size-medium);
+        letter-spacing: 3px;
+    }
+
+    .details{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 85%;
+        height: 20%;
+        color: var(--color-white);
+
+        .temperature{
+            margin-top: 10px;
+            font-size: var(--font-size-learger);
+            font-family: var(--font-temp);
+        }
+        .place{
+            margin-top: 15px;
+            margin-bottom: 0px;
+            font-size: var(--font-size-learge);
+            font-family: var(--font-temp);
+        }
+        .pera{
+            font-size: var(--font-size-small);
+            font-family: var(--font-pera);
+        }
+        .weather-type-logo{
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .country{
+        padding-left: 20px;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(5px);
+        box-shadow: -5px 0px 45px black;
+        color: var(--color-white);
+
+        .search-btn{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px 20px;
+            color: black;
+            background-color: #FF3E00;
+            border: none;
+            cursor: pointer;
+
+            i{
+                cursor: pointer;
+            }
+        }
+
+        .input-place{
+            width: 80%;
+            padding: 10px 0px;
+            background-color: transparent;
+            font-family: var(--font-pera);
+            font-size: var(--font-size-small);
+            border: none;
+            border-bottom: 1.5px solid rgba(255,255,255,0.2);
+            color: var(--color-white);
+        }
+        
+        .pera{
+            font-size: var(--font-size-small);
+            font-family: var(--font-pera);
+            width: 80%;
+            position: relative;
+
+            .gap{
+                position: absolute;
+                right: 0px;
+            }
+        }
+        .heading1{
+            font-size: var(--font-size-medium);
+            font-family: var(--font-pera);
+        }
+        .bar{
+            width: 80%;
+            height: 1px;
+            border-radius: 100%;
+            margin-left: 0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: rgba(255,255,255,0.2);
+        }
+    }
+}

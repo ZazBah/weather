@@ -1,102 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-   background-color: #202020;
-}
 /*HEAD-S*/
 
 /*HEAD-E*/
 /*BODY-S*/
-.heading1{
-    text-align: center;
-    font-size: 20px;
-    color: #ccccac;
-    font-family: 'Krona One', sans-serif;
-    margin-top: 10px;
-}
-.heading2{
-    font-size: 20px;
-    color: #ccccac;
-}
-.text-align-right{
-    text-align: right;
-}
-.text-align-left{
-    text-align: left;
-}
-.heading3{
-    text-align: center;
-    font-size: 15px;
-    color: #ccccac;
-    font-family: 'Nunito', sans-serif;
-}
-.margin-top{
-    margin-top: 50px;
-}
 
-.temp-btn{
-    width: 100%;
-    background-color: transparent;
-    border: 2px solid #ccccac;
-    color: #ccccac;
-    border-radius: 50px;
-    transition: 0.5s;
-}
-.temp-btn:hover{
-    color: #202020;
-    background-color: #ccccac;
-}
-.search-bar-div{
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.search-input{
-    width: 70%;
-    margin-right: 0px !important;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border: 2px solid #ccccac;
-    color: #ccccac;
-    outline: 0px;
-    padding-left: 20px;
-}
-.search-btn{
-    width: 25%;
-    margin-left: 0px !important;
-    color: #ccccac;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-    border: 2px solid #ccccac;
-    outline: 0px;
-    margin-top: -4px !important;
-    margin-left: -4px !important;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background-color: transparent;
-    transition: 0.3s;
-}
-.search-btn:hover{
-    background-color: #ccccac;
-    color: black;
-}
 /*BODY-E*/
 /*FOOTER-S*/
-.foter-div{
-    margin-top: 30%;
-    background-color: black;
-}
-.heading-foter{
-    color: white;
-    font-size: 10px;
-    text-align: center;
-}
+
 /*FOOTER-E*/
 
 @media only screen and (min-width: 320px){
@@ -135,11 +44,40 @@
 }
 
 @media only screen and (min-width: 1024px){
-
+    .weather-jar{
+        height: 80vh;
+    }
+    .details{
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        width: 85%;
+        height: 20%;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
 
 }
 
 @media only screen and (min-width: 1025px){
-    
+
+    .weather-jar{
+        height: 80vh;
+    }
+    .details{
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        width: 85%;
+        height: 20%;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .temperature{
+        margin-top: 20px;
+    }
+    .weather-type-logo{
+        margin-top: 25px !important;
+    }
 
 }
